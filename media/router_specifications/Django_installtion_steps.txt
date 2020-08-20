@@ -1,0 +1,11 @@
+Django 2.x Series 2.2.7
+Configure and install Database
+postgresql 
+(Pg admin) Installation 
+How to create Virtual Environment for Django application
+Pycharm Pro 
+python 3.8 Install
+Install Djano 2.2.7 from CMD + virtual Envirmnt
+Create new Project 
+pgadmin 4
+post base squal

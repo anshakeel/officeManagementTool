@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="proj_data">
+  <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.15">
+    <root id="1">
+      <ServerVersion>12.1</ServerVersion>
+    </root>
+    <database id="2" parent="1" name="data1">
+      <ObjectId>16393</ObjectId>
+      <Owner>postgres</Owner>
+      <Substituted>1</Substituted>
+    </database>
+    <database id="3" parent="1" name="postgres">
+      <ObjectId>13318</ObjectId>
+      <Comment>default administrative connection database</Comment>
+      <Owner>postgres</Owner>
+      <Current>1</Current>
+      <Substituted>1</Substituted>
+    </database>
+    <database id="4" parent="1" name="proj_data">
+      <ObjectId>18237</ObjectId>
+      <Owner>postgres</Owner>
+      <Substituted>1</Substituted>
+    </database>
+    <schema id="5" parent="2" name="information_schema">
+      <Substituted>1</Substituted>
+    </schema>
+    <schema id="6" parent="2" name="pg_catalog">
+      <Comment>system catalog schema</Comment>
+      <Substituted>1</Substituted>
+    </schema>
+    <schema id="7" parent="3" name="information_schema">
+      <Substituted>1</Substituted>
+    </schema>
+    <schema id="8" parent="3" name="pg_catalog">
+      <Comment>system catalog schema</Comment>
+      <Substituted>1</Substituted>
+    </schema>
+    <schema id="9" parent="4" name="information_schema">
+      <Substituted>1</Substituted>
+    </schema>
+    <schema id="10" parent="4" name="pg_catalog">
+      <Comment>system catalog schema</Comment>
+      <Substituted>1</Substituted>
+    </schema>
+  </database-model>
+</dataSource>

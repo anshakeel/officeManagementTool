@@ -1,0 +1,189 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Dashboard</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,700,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'css11/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css11/jquery-ui.css' %}">
+    <link rel="stylesheet" href="{% static 'css11/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css11/owl.theme.default.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css11/owl.theme.default.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css11/jquery.fancybox.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css11/bootstrap-datepicker.css' %}">
+
+    <link rel="stylesheet" href="{% static 'fonts11/flaticon/font/flaticon.css' %}">
+    <link rel="stylesheet" href="{% static 'fonts11/icomoon/style.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css11/aos.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css11/style.css' %}">
+    
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+  
+
+  
+
+
+  <div class="site-wrap">
+
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+   
+    
+    <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
+
+      <div class="container">
+        <div class="row align-items-center">
+          
+          <div class="col-6 col-xl-2">
+            <h1 class="mb-0 site-logo">Welcome<a href="index.html" class="mb-0"> {{user.first_name}} </a></h1>
+          </div>
+
+          <div class="col-12 col-md-10 d-none d-xl-block">
+            <nav class="site-navigation position-relative text-right" role="navigation">
+
+              <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+                <li><a href="#home-section" class="nav-link">Home</a></li>
+
+                  <li><a href="{% url 'userData' %}" class="nav-link">Profile</a></li>
+                <li><a href="{% url 'edit' %}" class="nav-link">Edit Profile</a></li>
+                <li><a href="{% url 'password_change' %}" class="nav-link">Change Password</a></li>
+                {% if user.is_authenticated %}
+                <li><a href="{% url 'logout' %}" class="nav-link">Logout</a></li>
+                  {% endif %}
+              </ul>
+            </nav>
+          </div>
+
+
+          <div class="col-6 d-inline-block d-xl-none ml-md-0 py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle float-right"><span class="icon-menu h3"></span></a></div>
+
+        </div>
+      </div>
+      
+    </header>
+
+  
+     
+    <div class="site-blocks-cover overlay" style="background-image: url({% static 'images12/hero_1.jpg' %});" data-aos="fade" id="home-section">
+
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+
+          
+          <div class="col-md-8 mt-lg-5 text-center">
+            <h1 class="text-uppercase mb-5" data-aos="fade-up">Hello {{ user.first_name }} ! </h1>
+              <h1 class="text-uppercase mb-5" data-aos="fade-up">Please Check Your Tasks </h1>
+
+
+            
+            <div data-aos="fade-up" data-aos-delay="100">
+
+            </div>
+          </div>
+            
+        </div>
+      </div>
+
+      <a href="#about-section" class="mouse smoothscroll">
+        <span class="mouse-icon">
+          <span class="mouse-wheel"></span>
+        </span>
+      </a>
+    </div>  
+
+    {% for w in wor %}
+    {% if user.id == w.Worker_id %}
+    <div class="site-section cta-big-image" id="about-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-12 text-center" data-aos="fade">
+            <h2 class="section-title mb-3">Task</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="">
+            <figure class="circle-bg">
+            <img src="{{w.image.url}}" alt="Image" class="img-fluid">
+            </figure>
+          </div>
+          <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
+            <div class="mb-4">
+              <h3 class="h3 mb-4 text-black">Clinet Name: {{ w.Client_Name }}</h3>
+                <h3 class="h3 mb-4 text-black"></h3>
+              <p>Description: {{ w.Description }}</p>
+            </div>
+            <div class="mb-4">
+              <ul class="list-unstyled ul-check success">
+                <li>Work Type: {{w.WorkType}}</li>
+                  {% if w.message %}
+                <li>Message From Manager: {{ w.message }}</li>
+                      {% endif %}
+              {% if w.Urgent %}
+                <li>Task is Urgent</li>
+                      {% endif %}
+              {% if w.comment %}
+                <li>Message from other User: {{ w.comment }}</li>
+                  {% endif %}
+                <li>Your Progress: {{ w.progress }}%</li>
+                 <a href="{{w.file.url}}" download>
+                       <h2> <button type="button" class="btn btn-indigo btn-lg" style="float:right;">Download File</button></h2>
+                    </a>
+              <form action="{% url 'click' w.id %}" method="post">
+                   {% csrf_token %}
+                       <input type="submit" value="Submit to Manager">
+                          </form>
+                           <form action="{% url 'assign' w.id%}" method="post">
+                              {% csrf_token %}
+                             <input type="submit" value="Assign to Other User">
+                         </form>
+                         <link><a href="{% url 'percent' w.id%}">Update</a></link>
+              </ul>
+              
+            </div>
+          </div>
+        </div>
+      </div>  
+    </div>
+  {% endif %}
+  {% endfor %}
+  {% for message in messages %}
+                        <h1>{{message}}</h1>
+                            {% endfor %}
+
+
+
+  <script src="{% static 'js11/jquery-3.3.1.min.js' %}"></script>
+  <script src="{% static 'js11/jquery-ui.js' %}"></script>
+  <script src="{% static 'js11/popper.min.js' %}"></script>
+  <script src="{% static 'js11/bootstrap.min.js' %}"></script>
+  <script src="{% static 'js11/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'js11/jquery.countdown.min.js' %}"></script>
+  <script src="{% static 'js11/jquery.easing.1.3.js' %}"></script>
+  <script src="{% static 'js11/aos.js' %}"></script>
+  <script src="{% static 'js11/jquery.fancybox.min.js' %}"></script>
+  <script src="{% static 'js11/jquery.sticky.js' %}"></script>
+  <script src="{% static 'js11/isotope.pkgd.min.js' %}"></script>
+
+  
+  <script src="{% static '' %}js11/main.js"></script>
+
+  
+    
+  </body>
+</html>

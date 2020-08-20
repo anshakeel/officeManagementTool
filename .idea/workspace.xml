@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e78960e0-2fb7-4ab8-846d-b61325942b19" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseLocalColorSettings">
+    <colors>
+      <entry key="93c007e8-3d93-4c38-bdfe-b40acb2be41c" value="Blue" />
+    </colors>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1V7SNhKAG0SexGNhRB7lSmRMNTd" />
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="postgresql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Templates" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\3rd Semester\SWEN18111113 SE3B\project\Templates" />
+      <recent name="G:\3rd Semester\SWEN18111113 SE3B\project\static" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Ans Shakeel\project\Templates" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="project" type="Python.DjangoServer" factoryName="Django server">
+      <module name="project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="project.settings" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@3fdb7720" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+          </expand>
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e78960e0-2fb7-4ab8-846d-b61325942b19" name="Default Changelist" comment="" />
+      <created>1576602601453</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1576602601453</updated>
+      <workItem from="1576602602787" duration="20864000" />
+      <workItem from="1576652513480" duration="4046000" />
+      <workItem from="1576659578774" duration="8764000" />
+      <workItem from="1576746994583" duration="4268000" />
+      <workItem from="1576770504610" duration="13919000" />
+      <workItem from="1576858511794" duration="3557000" />
+      <workItem from="1576870989375" duration="5249000" />
+      <workItem from="1577006533101" duration="675000" />
+      <workItem from="1577336680278" duration="10158000" />
+      <workItem from="1577377315460" duration="4961000" />
+      <workItem from="1577532820285" duration="1621000" />
+      <workItem from="1577555086629" duration="4235000" />
+      <workItem from="1577640325906" duration="11935000" />
+      <workItem from="1577693136185" duration="2634000" />
+      <workItem from="1577725645873" duration="12981000" />
+      <workItem from="1577772884087" duration="3437000" />
+      <workItem from="1577800268190" duration="4188000" />
+      <workItem from="1577810843365" duration="13741000" />
+      <workItem from="1577861904325" duration="17341000" />
+      <workItem from="1577891309475" duration="6144000" />
+      <workItem from="1577911141227" duration="1337000" />
+      <workItem from="1577956588813" duration="10569000" />
+      <workItem from="1578024651382" duration="32984000" />
+      <workItem from="1578127542822" duration="34591000" />
+      <workItem from="1578208849115" duration="24803000" />
+      <workItem from="1578292574909" duration="1296000" />
+      <workItem from="1578297278211" duration="3823000" />
+      <workItem from="1578304262896" duration="14153000" />
+      <workItem from="1578347375854" duration="7299000" />
+      <workItem from="1578379076752" duration="32213000" />
+      <workItem from="1578466689090" duration="23886000" />
+      <workItem from="1578550948746" duration="690000" />
+      <workItem from="1578553651905" duration="5243000" />
+      <workItem from="1578585719389" duration="5842000" />
+      <workItem from="1597216470755" duration="1701000" />
+      <workItem from="1597218814087" duration="88000" />
+      <workItem from="1597218950087" duration="2859000" />
+      <workItem from="1597852953352" duration="6269000" />
+      <workItem from="1597908009142" duration="8768000" />
+      <workItem from="1597917711185" duration="577000" />
+      <workItem from="1597924335741" duration="1320000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>

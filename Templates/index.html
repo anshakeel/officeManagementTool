@@ -1,0 +1,393 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Cougars</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,700,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'css11/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css11/jquery-ui.css' %}">
+    <link rel="stylesheet" href="{% static 'css11/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css11/owl.theme.default.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css11/owl.theme.default.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css11/jquery.fancybox.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css11/bootstrap-datepicker.css' %}">
+
+    <link rel="stylesheet" href="{% static 'fonts11/flaticon/font/flaticon.css' %}">
+    <link rel="stylesheet" href="{% static 'fonts11/icomoon/style.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css11/aos.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css11/style.css' %}">
+    
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+  
+
+  
+
+
+  <div class="site-wrap">
+
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+   
+    
+    <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
+
+      <div class="container">
+        <div class="row align-items-center">
+          
+          <div class="col-6 col-xl-2">
+            <h1 class="mb-0 site-logo"><a href="" class="mb-0">Cougars</a></h1>
+          </div>
+
+          <div class="col-12 col-md-10 d-none d-xl-block">
+            <nav class="site-navigation position-relative text-right" role="navigation">
+
+              <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+                <li><a href="#home-section" class="nav-link">Home</a></li>
+                 <li><a href="#about-section" class="nav-link">About Us</a></li>
+                <li><a href="#team-section" class="nav-link">Team</a></li>
+                <li><a href="#services-section" class="nav-link">Services</a></li>
+                   <li><a href="{% url 'login' %}" class="nav-link">Login</a></li>
+                   <li><a href="{% url 'register' %}" class="nav-link">Register Team</a></li>
+                <li><a href="#contact-section" class="nav-link">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+
+
+          <div class="col-6 d-inline-block d-xl-none ml-md-0 py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle float-right"><span class="icon-menu h3"></span></a></div>
+
+        </div>
+      </div>
+      
+    </header>
+
+  
+     
+    <div class="site-blocks-cover overlay" style="background-image: url({% static 'images11/hero_111.jpg' %});" data-aos="fade" id="home-section">
+
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+
+          
+          <div class="col-md-8 mt-lg-5 text-center">
+            <h1 class="text-uppercase mb-5" data-aos="fade-up">Office Automation Tool</h1>
+            
+            <div data-aos="fade-up" data-aos-delay="100">
+
+            </div>
+          </div>
+            
+        </div>
+      </div>
+
+      <a href="#about-section" class="mouse smoothscroll">
+        <span class="mouse-icon">
+          <span class="mouse-wheel"></span>
+        </span>
+      </a>
+    </div>  
+
+    
+    <div class="site-section cta-big-image" id="about-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-12 text-center" data-aos="fade">
+            <h2 class="section-title mb-3">About our Team</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="">
+            <figure class="circle-bg">
+            <img src="{% static 'images11/hero_111.jpg' %}" alt="Image" class="img-fluid">
+            </figure>
+          </div>
+          <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
+            <div class="mb-4">
+              <h3 class="h3 mb-4 text-black">For Better Team-Work</h3>
+              <p></p>
+
+
+              
+            </div>
+            
+            
+              
+            <div class="mb-4">
+              <ul class="list-unstyled ul-check success">
+                <li>Secure</li>
+                <li>Fast</li>
+                <li>Two end communication</li>
+                <li>Responsive</li>
+              </ul>
+              
+            </div>
+
+
+            
+            
+          </div>
+        </div>
+      </div>  
+    </div>
+
+    
+    <section class="site-section border-bottom" id="team-section">
+      <div class="container">
+        <div class="row mb-5 justify-content-center">
+          <div class="col-md-8 text-center">
+            <h2 class="section-title mb-3" data-aos="fade-up" data-aos-delay="">Your Team</h2>
+            <p class="lead" data-aos="fade-up" data-aos-delay="100"></p>
+          </div>
+        </div>
+        <div class="row">
+          
+
+          <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="">
+            <div class="team-member">
+              <figure>
+                <ul class="social">
+                  <li><a href="#"><span class="icon-facebook"></span></a></li>
+                  <li><a href="#"><span class="icon-twitter"></span></a></li>
+                  <li><a href="#"><span class="icon-linkedin"></span></a></li>
+                  <li><a href="#"><span class="icon-instagram"></span></a></li>
+                </ul>
+                <img src="{% static 'images11/person_5.jpg' %}" alt="Image" class="img-fluid">
+              </figure>
+              <div class="p-3">
+                <h3>Ans Shakeel</h3>
+                <span class="position">Team Leader</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="team-member">
+              <figure>
+                <ul class="social">
+                  <li><a href="#"><span class="icon-facebook"></span></a></li>
+                  <li><a href="#"><span class="icon-twitter"></span></a></li>
+                  <li><a href="#"><span class="icon-linkedin"></span></a></li>
+                  <li><a href="#"><span class="icon-instagram"></span></a></li>
+                </ul>
+                <img src="{% static 'images11/person_6.jpg' %}" alt="Image" class="img-fluid">
+              </figure>
+              <div class="p-3">
+                <h3>Bilal Ghaffar</h3>
+                <span class="position">Product Manager</span>
+              </div>
+            </div>
+          </div>
+
+
+
+
+            </div>
+          </div>
+
+
+          
+
+
+    </section>
+
+
+
+    
+    
+    
+
+    <section class="site-section border-bottom bg-light" id="services-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-12 text-center" data-aos="fade">
+            <h2 class="section-title mb-3">Our Services</h2>
+          </div>
+        </div>
+        <div class="row align-items-stretch">
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up">
+            <div class="unit-4">
+              <div class="unit-4-icon mr-4"><span class="text-primary flaticon-startup"></span></div>
+              <div>
+                <h3>Task Management Services</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="unit-4">
+              <div class="unit-4-icon mr-4"><span class="text-primary flaticon-graphic-design"></span></div>
+              <div>
+                <h3>Automation of Office Works</h3>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="unit-4">
+              <div class="unit-4-icon mr-4"><span class="text-primary flaticon-settings"></span></div>
+              <div>
+                <h3>Team Management services</h3>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="">
+            <div class="unit-4">
+              <div class="unit-4-icon mr-4"><span class="text-primary flaticon-idea"></span></div>
+              <div>
+                <h3>Measurement of Team performance</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="unit-4">
+              <div class="unit-4-icon mr-4"><span class="text-primary flaticon-smartphone"></span></div>
+              <div>
+                <h3>Teams Fat Cutting</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="unit-4">
+              <div class="unit-4-icon mr-4"><span class="text-primary flaticon-head"></span></div>
+              <div>
+                <h3>Tasks creating delay</h3>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+    <section class="site-section bg-light" id="contact-section" data-aos="fade">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-12 text-center">
+            <h2 class="section-title mb-3">Contact Us</h2>
+          </div>
+        </div>
+        <div class="row mb-5">
+          
+
+
+          <div class="col-md-4 text-center">
+            <p class="mb-4">
+              <span class="icon-room d-block h4 text-primary"></span>
+              <span>Khawaja Fareed University Of Engineering and Information Technology</span>
+            </p>
+          </div>
+          <div class="col-md-4 text-center">
+            <p class="mb-4">
+              <span class="icon-phone d-block h4 text-primary"></span>
+              <a href="#">0331-7892104</a>
+            </p>
+          </div>
+          <div class="col-md-4 text-center">
+            <p class="mb-0">
+              <span class="icon-mail_outline d-block h4 text-primary"></span>
+              <a href="#">ashakeel1111@gmail.com</a>
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 mb-5">
+
+            
+
+            <form action="#" class="p-5 bg-white">
+              
+              <h2 class="h4 text-black mb-5">Contact Form</h2> 
+
+              <div class="row form-group">
+                <div class="col-md-6 mb-3 mb-md-0">
+                  <label class="text-black" for="fname">First Name</label>
+                  <input type="text" id="fname" class="form-control">
+                </div>
+                <div class="col-md-6">
+                  <label class="text-black" for="lname">Last Name</label>
+                  <input type="text" id="lname" class="form-control">
+                </div>
+              </div>
+
+              <div class="row form-group">
+                
+                <div class="col-md-12">
+                  <label class="text-black" for="email">Email</label> 
+                  <input type="email" id="email" class="form-control">
+                </div>
+              </div>
+
+              <div class="row form-group">
+                
+                <div class="col-md-12">
+                  <label class="text-black" for="subject">Subject</label> 
+                  <input type="subject" id="subject" class="form-control">
+                </div>
+              </div>
+
+              <div class="row form-group">
+                <div class="col-md-12">
+                  <label class="text-black" for="message">Message</label> 
+                  <textarea name="message" id="message" cols="30" rows="7" class="form-control" placeholder="Write your notes or questions here..."></textarea>
+                </div>
+              </div>
+
+              <div class="row form-group">
+                <div class="col-md-12">
+                  <input type="submit" value="Send Message" class="btn btn-primary btn-md text-white">
+                </div>
+              </div>
+
+  
+            </form>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    
+
+  </div> <!-- .site-wrap -->
+
+  <script src="{% static 'js11/jquery-3.3.1.min.js' %}"></script>
+  <script src="{% static 'js11/jquery-ui.js' %}"></script>
+  <script src="{% static 'js11/popper.min.js' %}"></script>
+  <script src="{% static 'js11/bootstrap.min.js' %}"></script>
+  <script src="{% static 'js11/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'js11/jquery.countdown.min.js' %}"></script>
+  <script src="{% static 'js11/jquery.easing.1.3.js' %}"></script>
+  <script src="{% static 'js11/aos.js' %}"></script>
+  <script src="{% static 'js11/jquery.fancybox.min.js' %}"></script>
+  <script src="{% static 'js11/jquery.sticky.js' %}"></script>
+  <script src="{% static 'js11/isotope.pkgd.min.js' %}"></script>
+
+  
+  <script src="{% static 'js11/main.js' %}"></script>
+
+  
+    
+  </body>
+</html>

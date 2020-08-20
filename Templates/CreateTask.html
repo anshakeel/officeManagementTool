@@ -1,0 +1,112 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Contact V2</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="{% static 'images15/icons/favicon.ico' %}"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'vendor15/bootstrap/css/bootstrap.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'fonts15/font-awesome-4.7.0/css/font-awesome.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'vendor15/animate/animate.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'vendor15/css-hamburgers/hamburgers.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'vendor15/select2/select2.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'css15/util.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css15/main.css' %}">
+<!--===============================================================================================-->
+</head>
+<body>
+
+	<div class="bg-contact2" style="background-image: url('{% static 'images15/bg-01.jpg' %}');">
+		<div class="container-contact2">
+			<div class="wrap-contact2">
+				<form class="contact2-form validate-form" enctype="multipart/form-data" method="post">
+                {% csrf_token %}
+					<span class="contact2-form-title">
+						Create Task
+					</span>
+                    <div class="wrap-input2 validate-input" data-validate="Client Name is required">
+                        <select  name="user">
+                            {% for user in u %}
+                            <option value="{{ user.id }}" name="{{ user.id }}">{{ user.username }}</option>
+                            {% endfor %}
+                        </select>
+						<span class="focus-input2" data-placeholder=""></span>
+					</div>
+
+					<div class="wrap-input2 validate-input" data-validate="Client Name is required">
+						<input class="input2" type="text" name="client_name">
+						<span class="focus-input2" data-placeholder="Client Name"></span>
+					</div>
+                    <div class="wrap-input2 validate-input" data-validate="Name is required">
+						<input class="input2" type="text" name="worktype">
+						<span class="focus-input2" data-placeholder="Work Type"></span>
+					</div>
+                    <div class="wrap-input2 validate-input" data-validate="Name is required">
+						<input class="input2" type="file" name="file">
+						<span class="focus-input2" data-placeholder="File"></span>
+					</div>
+                    <div class="wrap-input2 validate-input" data-validate="Image is required">
+						<input class="input2" type="file" name="image">
+						<span class="focus-input2" data-placeholder="Image: "></span>
+					</div>
+
+					<div class="wrap-input2 validate-input" data-validate = "">
+						<input class="input2" type="number" name="price">
+						<span class="focus-input2" data-placeholder="Price"></span>
+					</div>
+                <div class="wrap-input2 validate-input" data-validate = "">
+						<input class="input" type="checkbox" name="urgent">
+						<span class="focus-input2" data-placeholder="URGENT "></span>
+					</div>
+
+					<div class="wrap-input2 validate-input" data-validate = "Description is required">
+						<textarea class="input2" name="description"></textarea>
+						<span class="focus-input2" data-placeholder="Description: "></span>
+					</div>
+
+					<div class="container-contact2-form-btn">
+						<div class="wrap-contact2-form-btn">
+							<div class="contact2-form-bgbtn"></div>
+							<button class="contact2-form-btn">
+								Create Task
+							</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+
+
+<!--===============================================================================================-->
+	<script src="{% static 'vendor15/jquery/jquery-3.2.1.min.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static 'vendor15/bootstrap/js/popper.js' %}"></script>
+	<script src="{% static 'vendor15/bootstrap/js/bootstrap.min.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static 'vendor15/select2/select2.min.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static 'js15/main.js' %}"></script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-23581568-13');
+	</script>
+
+</body>
+</html>

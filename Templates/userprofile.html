@@ -1,0 +1,92 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link href="{% static 'img1/favicon.ico' %}" rel="shortcut icon"/>
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i,700" rel="stylesheet">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="{% static 'css1/bootstrap.min.css' %}"/>
+	<link rel="stylesheet" href="{% static 'css1/font-awesome.min.css' %}"/>
+	<link rel="stylesheet" href="{% static 'css1/flaticon.css' %}"/>
+	<link rel="stylesheet" href="{% static 'css1/owl.carousel.css' %}"/>
+	<link rel="stylesheet" href="{% static 'css1/magnific-popup.css' %}"/>
+	<link rel="stylesheet" href="{% static 'css1/style.css' %}"/>
+
+
+</head>
+<body>
+	<!-- Page Preloder -->
+	<div id="preloder">
+		<div class="loader"></div>
+	</div>
+
+
+	<!-- Hero section start -->
+
+	<section class="hero-section spad">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xl-10 offset-xl-1">
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="hero-text">
+								<h2>{{p.user}}</h2>
+								<p> {{ p.bio }}</p>
+							</div>
+							<div class="hero-info">
+								<h2>General Info</h2>
+								<ul>
+                                    <li><span>First Name</span>{{user1.first_name}}</li>
+                                    <li><span>Last Name</span>{{user1.last_name}}</li>
+                                    <li><span>Full Name</span>{{user1.first_name}}  {{ user1.last_name }}</li>
+									<li><span>Date of Birth</span>{{p.dob}}</li>
+                                    <li><span>Age:</span>{{p.age}}</li>
+									<li><span>Address</span>{{p.address}}</li>
+									<li><span>E-mail</span>{{user1.email}}</li>
+									<li><span>Phone </span>{{p.phone_no}}</li>
+                                    <li><span>Joining Date </span>{{p.join_date}}</li>
+                                    <li><span>Experiance </span>{{p.exp}}</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<figure class="hero-image">
+								<img src="{{ p.img.url }}" >
+							</figure>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+    <h1> <a href="{% url 'edit' %}">Update</a> Your Profile  </h1>
+	<!-- Hero section end -->
+
+	<!-- Social links section start -->
+
+	<!-- Resume section start -->
+
+
+
+	<!-- Footer section start -->
+	<footer class="footer-section">
+		<div class="container text-center">
+			<div class="copyright">
+</div>
+		</div>
+	</footer>
+	<!-- Footer section end -->
+
+	<!--====== Javascripts & Jquery ======-->
+	<script src="{% static 'js1/jquery-2.1.4.min.js' %}"></script>
+	<script src="{% static 'js1/bootstrap.min.js' %}"></script>
+	<script src="{% static 'js1/owl.carousel.min.js' %}"></script>
+	<script src="{% static 'js1/magnific-popup.min.js' %}"></script>
+	<script src="{% static 'js1/circle-progress.min.js' %}"></script>
+	<script src="{% static 'js1/main.js' %}"></script>
+</body>
+</html>
